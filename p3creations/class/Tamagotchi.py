@@ -10,6 +10,7 @@
     the purpose of the game is to keep the pet alive for as long
     as possible'''
 import random as rd
+from Faces2 import *
 
 
 from datetime import datetime 
@@ -24,12 +25,13 @@ class Critter(object):
         
 
     def talk(self):
-        msg = "Hi! I'm" + self.name +"!\n"
+        msg = " Hi! I'm" + self.name +"!\n"
         msg += " I was born: " + str(self.birthday.date()) + "\n"
         msg += " Happiness Score: " + str(self.happiness) + "\n"
         msg += " Fitness Score: " + str(self.fitness) + "\n"
         msg += " Satiation Score: " + str(self.fitness) +"\n"
-        return msg
+        print(msg)
+
 
     def feed(self):
         self.satiation += rd.randint(1,15)
@@ -41,26 +43,36 @@ class Critter(object):
             msg = "No, I can't eat anymore i'm stuffed!"
         elif self.satiation <= 120:
             msg = "Yum! I was fed" + str(self.satiation)
-        return msg
+        print(msg)
 
-    #def exercise(self):
-        #self.fitness += rd.randint(1,15)
-        #msg = ""
-        #if self.fitness > 120:
-            #self.fitness = 120
-            #msg = """\nNo, i'm exausted!"""
-        #elif self.fitness < 120:
-            #msg = ""
-    #def play(self):
-        #self.happiness += rd.randint(1,15)
-        #msg = ""
-        #if self.happiness > 120:
-            #self.happiness = 120
-            #msg = """\nNo, I can't eat anymore i'm stuffed!"""
+
+    def exercise(self):
+        self.fitness += rd.randint(1,15)
+        print("Let's get this bread")
+        if self.fitness > 120:
+            self.fitness = 120
+            msg = """\nNo, i'm exausted!"""
+
+            
+    def play(self):
+        self.happiness += rd.randint(1,15)
+        msg = "Come on, Donkehy"
+        if self.happiness > 120:
+            self.happiness = 120
+        print(msg)
+
         
+    def slow_death(self):
+        '''randomly lower's each attribute from (1,5) inclusive'''
 
+        self.happiness -= rd.randint(1,5)
+        self.satiation -= rd.randint(1,5)
+        self.fitness -= rd.randint(1,5)
+        
 if __name__ == "__main__":
-    test_critter = Critter(" Martha")
-    print(test_critter.talk())
-    #print(test_critter.feed())
-        
+    critter_happy()
+    test_critter = Critter(" Shrek")
+    test_critter.talk()
+    test_critter.slow_death()
+    test_critter.play()
+    test_critter.talk()
