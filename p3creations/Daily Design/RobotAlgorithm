@@ -1,0 +1,18 @@
+#!/usr/bin/python3
+#Chris Huffman
+#9/17/2019
+
+def Robot_Algorithm():
+    '''This program is to get a robot to transfer from one chair to another'''
+    #Robot get's up from chair
+    Stand_Up()
+
+    #Robot walks to the other chair 10 tiles away
+    Walk_Foward(10)
+
+    #Robot turns facing away from the opposite chair
+    Turn_Left(2)
+
+    #Robot sits down facing the chair he has set out from in the beginning of the algorithm
+    Sit_Down()
+Robot_Algorithm()

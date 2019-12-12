@@ -164,7 +164,7 @@ def phone_number_generator():
 
     x = 0
     while x == 0:
-        phone_numbers = input("How many phone numbers would you like generat?, 'q' to quit: ").upper()
+        phone_numbers = input("How many phone numbers would you like generate?, 'q' to quit: ").upper()
         if phone_numbers == "Q":
             x = 1
         else:
@@ -269,10 +269,10 @@ def phone_number_generator():
                     elif pick_places == 23:
                         Minnesota = rd.choice(minnesota_area_codes)
                         print("\nMinnesota")
-                        print("\n",Minnesota," - ",first_three, " - ", last_four,"\n")
+                        print("(",Minnesota,") - ",first_three, " - ", last_four,"\n")
                     elif pick_places == 24:
                         Mississippi = rd.choice(mississippi_area_codes)
-                        print("\Mississippi")
+                        print("\nMississippi")
                         print("(",Mississippi,") - ",first_three, " - ", last_four,"\n")
                     elif pick_places == 25:
                         Missouri = rd.choice(missouri_area_codes)
@@ -304,7 +304,7 @@ def phone_number_generator():
                         print("(",New_Mexico,") - ",first_three, " - ", last_four,"\n")
                     elif pick_places == 32:
                         North_Carolina = rd.choice(north_carolina_area_codes)
-                        print("\nNorth Carolina\n")
+                        print("\nNorth Carolina")
                         print("(",North_Carolina,") - ",first_three, " - ", last_four,"\n")
                     elif pick_places == 33:
                         South_Carolina = rd.choice(south_carolina_area_codes)

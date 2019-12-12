@@ -1,0 +1,17 @@
+import turtle as t
+position = (0,-100)
+d = t.Turtle()
+d.penup()
+d.setpos(position)
+d.pendown()
+d.left(90)
+d.width(1.5)
+d.forward(150)
+d.right(90)
+d.forward(150)
+d.right(90)
+d.forward(100)
+d.right(90)
+
+window = t.Screen()
+window.mainloop()

@@ -1,0 +1,32 @@
+Q1. What command deletes a file?
+Answer: rm
+
+Q2. Which command to copy a file:
+Answer: cp
+
+Q3. Which command to move one file to another location:
+Answer: mv
+
+Q4. Which command would you use to cretae a brand new directory?
+Answer: mkdir
+
+Q5. What command do you use to save snapshots, perserving your work (Version Contorl):
+Answer: git
+
+Q6. What command do you use to cause your system to turn off and back on:
+Answer: reboot
+
+Q7. Command that allows you to alter the mode of a file:
+Answer: chmod
+
+Q8. What command allows you to list the contents of a director:
+Answer: ls
+
+Q9. What editor allows us to edit files:
+Answer: Nano
+
+Q10. What commands gives oyu access to root privelages: 
+Answer: su
+
+Q11. Which command creates a steam locomotive to go across your screen:
+Answer: sl
